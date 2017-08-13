@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/plabg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.nikrokzz.pla_personallanguageasisstant.HomeScreen">
+
+    <Button
+        android:id="@+id/learnEngBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:nestedScrollingEnabled="true"
+        android:onClick="onButtonClicked"
+        android:text="Learn English"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="5dp"/>
+
+    <Button
+        android:id="@+id/conversationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClicked"
+        android:text="conversation"
+        android:layout_below="@+id/learnEngBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/translateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClicked"
+        android:text="Translation"
+        android:layout_below="@+id/conversationBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClicked"
+        android:text="Exit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="131dp" />
+
+
+
+</RelativeLayout>

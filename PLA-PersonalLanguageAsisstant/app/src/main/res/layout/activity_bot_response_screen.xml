@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.nikrokzz.pla_personallanguageasisstant.BotResponseScreen"
+    android:background="#ff476853">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="6">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ivSarahBot"
+                android:src="@mipmap/sarah_bot"
+                android:layout_weight="1"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ivSarahBotStill"
+                android:src="@mipmap/sarah_bot"
+                android:layout_weight="1"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_weight="1"
+                android:id="@+id/tvResponse"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contentLinearLayout"
+            android:layout_weight="3">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/etQuery"
+                android:background="@drawable/rounded_edit_text"
+                android:layout_weight="4"
+                android:hint="How I may asisst you!" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/ibMicrophone"
+                android:visibility="visible"
+                android:onClick="onButtonClicked"
+                android:background="@mipmap/microphone"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:onClick="onButtonClicked"
+                android:id="@+id/ibSend"
+                android:background="@mipmap/send"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

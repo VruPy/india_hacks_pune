@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PLA-Personal Language Asisstant</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_learn_english">LearnEnglishActivity</string>
+    <string name="title_activity_introduction__main">Introduction_Main</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_bot_response_screen">BotResponseScreen</string>
+    <string name="title_activity_bot_response_screen_relative">BotResponseScreenRelative</string>
+</resources>
